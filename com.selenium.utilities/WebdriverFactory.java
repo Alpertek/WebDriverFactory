@@ -34,7 +34,8 @@ public class WebdriverFactory {
                 driver = new InternetExplorerDriver();
                 break;
             default:
-                driver = null;
+                WebDriverManager.chromedriver().setup();
+                driver = new ChromeDriver();
         }
         return driver;
 
