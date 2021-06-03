@@ -7,11 +7,11 @@ import org.openqa.selenium.WebDriver;
 public class SampleUsage{
 	public static void main(String[] args){
 
-		WebdriverFactory factory = new WebdriverFactory();
 		
-		// Creating and using driver with factory object of     //  WebdriverFactory class
+		
+		// Creating and using driver with  a static method of WebdriverFactory class
 
-		WebDriver driver = factory.getDriver("chrome");
+		WebDriver driver = WebdriverFactory.getDriver("chrome");
 
 		String url = "https://www.google.com";
 
