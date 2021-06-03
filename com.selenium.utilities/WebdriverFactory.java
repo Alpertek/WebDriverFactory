@@ -10,7 +10,7 @@ import org.openqa.selenium.opera.OperaDriver;
 
 public class WebdriverFactory {
 
-    public WebDriver getDriver(String browserType){
+    public static WebDriver getDriver(String browserType){
         WebDriver driver = null;
         switch (browserType.toLowerCase()){
             case "chrome":
